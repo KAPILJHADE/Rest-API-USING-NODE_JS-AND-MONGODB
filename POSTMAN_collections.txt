@@ -1,4 +1,4 @@
-1. POSTMAN url to check the API(url):
+1. POSTMAN url to check the API(url):https://restapi-using-node-nosql.herokuapp.com/
 
 2. Please use the below collections step by step to test the API
 
