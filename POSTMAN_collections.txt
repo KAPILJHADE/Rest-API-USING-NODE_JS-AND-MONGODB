@@ -1,0 +1,50 @@
+1. POSTMAN url to check the API(url):
+
+2. Please use the below collections step by step to test the API
+
+	A. Add a new car(select method:post and set url: url/cars. Now choose raw entry as json file and paste the below data and click on send.)
+
+	{
+        "vehicle_no": 206,
+        "model": "honda",
+        "seating_capacity": 4,
+        "rent_perd": 1280
+ 	  }
+
+
+	B. Book a specific car based on its availability.(select method:post and set url: url/bookings. Now choose raw entry as json file and paste 		the below data and click on send.)
+
+	
+	{
+        "model": "swift",
+        "customer_name": "bob",
+        "customer_ph_no": 9870000001,
+        "issue_date": "2020-06-22",
+        "return_date": "2020-06-27"
+    	}
+
+
+
+	C. Show the cars that are available to book
+
+	(select method:get and set url: url/cars and click on send.)
+
+	D. Using Car Model (Id for that car) show the details of a particular car and its currently active booking
+
+	(select method:get and set url: url/cars/5eb68ad5d4a828241b508ba6 and click on send.)
+
+	E. Update/Delete a Car from the system
+
+		E.a: (to update a car select method:patch and set url:url/cars)
+
+			{
+			
+			"vehicle_no": 201,
+			"model": "changed",
+			"seating_capacity": 6,
+			"rent_perd": 500
+		    }
+
+		E.b: (to delete a car set method:delete and set url:url/cars/5eb5792e831c9a1f37652c10  this will delete a car with model name audi)
+
+*for all the above check_steps (collections) you can get the rosponse in the response section of POSTMAN)*
