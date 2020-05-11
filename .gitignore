@@ -3,3 +3,4 @@ node_modules
 initDB.js
 package-lock.json
 POSTMAN_collections.txt
+binding.gyp
