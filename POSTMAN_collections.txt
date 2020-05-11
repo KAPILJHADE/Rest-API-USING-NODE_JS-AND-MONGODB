@@ -48,3 +48,4 @@
 		E.b: (to delete a car set method:delete and set url:url/cars/5eb5792e831c9a1f37652c10  this will delete a car with model name audi)
 
 *for all the above check_steps (collections) you can get the rosponse in the response section of POSTMAN)*
+*TO view the initial content of the database collections visit: https://restapi-using-node-nosql.herokuapp.com/cars ; https://restapi-using-node-nosql.herokuapp.com/bookings *
